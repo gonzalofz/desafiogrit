@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header "
+    "menu main"
+    "footer footer  ";
+  grid-template-columns: 20% auto;
+  grid-template-rows: 16% 80% 4%;
+  height: 100vh;
+  gap: 1px;
+}
+
+header {
+  grid-area: header;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+menu {
+  grid-area: menu;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-size: 25px;
+  padding: 10%;
+}
+
+
+
+main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+
+  background-color:white;
+}
+
+footer {
+  grid-area: footer;
+  text-decoration-color: azure;
+  background-color:gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.card img {
+  height: 200px;
+
+}
+
+.baner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
